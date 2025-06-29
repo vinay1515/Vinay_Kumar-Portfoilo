@@ -1,0 +1,451 @@
+/* File: style.css */
+/* --- a/file:///e%3A/Website/style.css */
+/* +++ b/file:///e%3A/Website/style.css */
+/* @@ -1,0 +1,162 @@ */
+/* Global Styles */
+body {  
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+a, button {
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+a:hover, button:hover {
+  color: #828fd4;
+  background: #f3e8ff;
+  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.15);
+  transform: translateY(-2px) scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1f2937;
+  color: #f3f4f6;  
+}
+.dark-mode a {
+  color: #93c5fd;
+}
+
+/* Section/Card Styles */
+section {
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.5s, transform 0.5s;
+}
+section:hover {
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.15);
+  background: #f0f9ff;
+  transform: scale(1.02);
+}
+.dark-mode section {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+.dark-mode section:hover {
+  background: #1e293b;
+}
+
+/* Add hover effect to all sections in dark mode */
+.dark-mode section:hover,
+.dark-mode #skills .grid > div:hover,
+.dark-mode #certifications .grid > div:hover,
+.dark-mode #projects .grid > div:hover,
+.dark-mode #education .bg-white:hover,
+.dark-mode #experience .bg-white:hover,
+.dark-mode #resume:hover,
+.dark-mode #contact:hover {
+  background-color: #232946 !important;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.18), 0 2px 8px rgba(0,0,0,0.18);
+  transform: scale(1.03);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+/* Skills and Certifications Grid */
+#skills .grid > div,
+#certifications .grid > div {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  border: 1px solid #e5e7eb;
+}
+#skills .grid > div:hover,
+#certifications .grid > div:hover {
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.18);
+  transform: translateY(-4px) scale(1.03);
+  background: #f0f9ff;
+}
+.dark-mode #skills .grid > div,
+.dark-mode #certifications .grid > div {
+  background: #374151;
+  color: #f3f4f6;
+  border-color: #334155;
+}
+.dark-mode #skills .grid > div:hover,
+.dark-mode #certifications .grid > div:hover {
+  background: #1e293b;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Section Headings: Large, centered, dark, with blue underline */
+h1.section-title,
+h2.section-title,
+h2,
+h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e293b; /* dark blue/black */
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+h1.section-title::after,
+h2.section-title::after,
+h2::after,
+h1::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  width: 3rem;
+  height: 3px;
+  background: #60a5fa; /* blue-400 */
+  border-radius: 2px;
+}
+.dark-mode h1.section-title,
+.dark-mode h2.section-title,
+.dark-mode h2,
+.dark-mode h1 {
+  color: #f3f4f6;
+}
+.dark-mode h1.section-title::after,
+.dark-mode h2.section-title::after,
+.dark-mode h2::after,
+.dark-mode h1::after {
+  background: #38bdf8; /* blue-400 for dark mode */
+}
+
+/* Animate gradient for hero title */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 3s ease-in-out infinite;
+}
+
+/* Contact Section Custom */
+#contact .max-w-xl {
+  border: 2px solid #e0e7ff;
+  background: linear-gradient(135deg, #f0f9ff 60%, #fdf2f8 100%);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.10);
+}
+.dark-mode #contact .max-w-xl {
+  background: linear-gradient(135deg, #1e293b 60%, #312e81 100%);
+  border-color: #334155;
+}
+#contact input, #contact textarea {
+  background: #f9fafb;
+}
+.dark-mode #contact input, .dark-mode #contact textarea {
+  background: #334155;
+  color: #f3f4f6;
+}
+#contact button {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+/* Make certification images bigger and cards clickable */
+#certifications .grid > a img {
+  height: 7rem;
+  width: auto;
+  margin-bottom: 1.25rem;
+}
+#certifications .grid > a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
+}
+#certifications .grid > a:hover {
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.18);
+  border-color: #6366f1;
+  background: #f0f9ff;
+  transform: translateY(-4px) scale(1.04);
+}
+.dark-mode #certifications .grid > a {
+  background: #374151;
+  color: #f3f4f6;
+  border-color: #334155;
+}
+.dark-mode #certifications .grid > a:hover {
+  background: #1e293b;
+}
+
+/* Center Resume Section */
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Projects Section Card Styles */
+#projects .grid > div {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  position: relative;
+  padding-bottom: 3.5rem; /* space for Project Link */
+}
+#projects .grid > div:hover {
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.18);
+  background: #f0f9ff;
+  transform: translateY(-4px) scale(1.03);
+}
+#projects h3 {
+  color: #0891b2; /* cyan-700 */
+}
+#projects a {
+  transition: color 0.2s;
+}
+#projects a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.dark-mode #projects .grid > div {
+  background: #374151;
+  color: #f3f4f6;
+  border-color: #334155;
+}
+.dark-mode #projects .grid > div:hover {
+  background: #1e293b;
+}
+.dark-mode #projects h3 {
+  color: #22d3ee;
+}
+.dark-mode #projects a {
+  color: #60a5fa;
+}
+.dark-mode #projects a:hover {
+  color: #38bdf8;
+}
+
+/* Navigation Bar */
+header {
+  background: #111827; /* dark blue/black */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 50;
+}
+header nav a {
+  color: #f3f4f6;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+header nav a:hover, header nav a.active {
+  color: #60a5fa; /* blue highlight */
+  border-bottom: 2px solid #60a5fa;
+}
+
+/* Navigation and Link Hover Effects */
+header nav a,
+a,
+button {
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+header nav a:hover,
+a:hover {
+  color: #2563eb !important;
+  background: transparent;
+  text-decoration: underline;
+}
+header nav a.active {
+  color: #60a5fa !important;
+  border-bottom: 2px solid #60a5fa;
+}
+
+/* Button Styles & Hover */
+.btn-blue,
+.bg-gradient-to-r {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.btn-blue:hover,
+.bg-gradient-to-r:hover {
+  background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.15);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Contact Form Input Fields */
+#contact input,
+#contact textarea {
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #2563eb33;
+  outline: none;
+}
+.dark-mode #contact input,
+.dark-mode #contact textarea {
+  background: #334155;
+  color: #f3f4f6;
+  border-color: #334155;
+}
+.dark-mode #contact input:focus,
+.dark-mode #contact textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px #60a5fa33;
+}
+
+/* Contact Button */
+#contact button[type="submit"] {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+#contact button[type="submit"]:hover {
+  background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.18);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Icon in Button (for Download Resume, etc.) */
+.btn-blue svg,
+.bg-gradient-to-r svg {
+  margin-right: 0.5em;
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: middle;
+}
+
+/* Ensure all text inside sections/cards is visible in dark mode */
+.dark-mode section,
+.dark-mode section * {
+  color: #f3f4f6 !important;
+}
+
+.dark-mode .text-gray-600,
+.dark-mode .text-gray-700,
+.dark-mode .text-gray-500,
+.dark-mode .text-indigo-700,
+.dark-mode .text-cyan-700 {
+  color: #e0e7ef !important;
+}
+
+.dark-mode .text-blue-600,
+.dark-mode .text-indigo-600 {
+  color: #93c5fd !important;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  color: #f3f4f6 !important;
+  background: #334155 !important;
+}
+
+/* Section Titles for About, Skills, etc. */
+h2.section-title {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+h2.section-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  border-radius: 2rem;
+}
+.dark-mode h2.section-title:after {
+  background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+}
+
+/* Experience & Education Card Styles for Dark Mode */
+.dark-mode #experience .bg-white,
+.dark-mode #education .bg-white {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+  border-color: #334155 !important;
+}
+
+.dark-mode #experience .text-gray-800,
+.dark-mode #education .text-gray-800 {
+  color: #f3f4f6 !important;
+}
+.dark-mode #experience .text-gray-600,
+.dark-mode #education .text-gray-600,
+.dark-mode #experience .text-gray-500,
+.dark-mode #education .text-gray-500 {
+  color: #cbd5e1 !important;
+}
+.dark-mode #experience .bg-indigo-100,
+.dark-mode #education .bg-indigo-100 {
+  background-color: #312e81 !important;
+  color: #a5b4fc !important;
+}
+.dark-mode #experience .text-indigo-800,
+.dark-mode #education .text-indigo-800 {
+  color: #a5b4fc !important;
+}
+#mobile-menu {
+  opacity: 0;
+  pointer-events: none;
+}
+#mobile-menu.opacity-100 {
+  opacity: 1;
+  pointer-events: auto;
+}
