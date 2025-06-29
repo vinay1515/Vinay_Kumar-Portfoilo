@@ -582,20 +582,32 @@
     <section id="contact" class="scroll-mt-32 transition-transform duration-700 hover:scale-105 hover:shadow-2xl">
       <h2 class="text-3xl font-bold text-indigo-600 mb-4 text-center transition-colors duration-300 hover:text-pink-500">Contact</h2>
       <div class="max-w-xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center">
-        <form class="w-full space-y-4">
-          <div class="flex flex-col md:flex-row gap-4">
-            <input type="text" placeholder="Your Name" class="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100" required />
-            <input type="email" placeholder="Your Email" class="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100" required />
-          </div>
-          <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100" rows="5" required></textarea>
-          <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 via-pink-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:from-pink-500 hover:to-indigo-600 transition-all duration-300 flex items-center justify-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M22 2 11 13" />
-          <path d="M22 2 15 22 11 13 2 9l20-7z"/>
-        </svg>
-        Send Message
-          </button>
-        </form>
+        <form action="https://formsubmit.co/duvvavinaykumar@gmail.com" method="POST" class="w-full space-y-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="text" name="name" placeholder="Your Name" required
+            class="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100" />
+          <input type="email" name="email" placeholder="Your Email" required
+            class="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100" />
+        </div>
+        <textarea name="message" placeholder="Your Message" rows="5" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-400 transition bg-gray-50 dark:bg-gray-700 dark:text-gray-100"></textarea>
+
+        <!-- Optional: redirect to thank you page -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+
+        <!-- Optional: turn off CAPTCHA -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+
+        <button type="submit"
+          class="w-full bg-gradient-to-r from-indigo-600 via-pink-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:from-pink-500 hover:to-indigo-600 transition-all duration-300 flex items-center justify-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 2 11 13" />
+            <path d="M22 2 15 22 11 13 2 9l20-7z" />
+          </svg>
+          Send Message
+        </button>
+      </form>
       </div>
     </section>
   </main>
