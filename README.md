@@ -9,6 +9,7 @@ Welcome to the GitHub repository for my personal portfolio website! This project
 
 Hi, I'm Vinay Kumar Duvva, a motivated Software Engineer passionate about building seamless digital experiences, from intuitive user interfaces to robust, secure cloud infrastructure. I thrive at the intersection of development and operations, ensuring applications are both user-friendly and highly resilient.
 Currently working at Cognizant, I have a proven track record of operational excellence. This portfolio highlights my journey in crafting engaging web experiences and scalable cloud solutions, demonstrating my hands-on expertise across various technologies and cloud platforms.
+
 ---
 
 ---
@@ -24,6 +25,7 @@ My portfolio website provides an in-depth look into my professional profile, fea
 •	Contact Form: ✉️ An easy way for visitors to reach out for collaborations or inquiries.
 •	Responsive Design: 📱🖥️ Optimized for seamless viewing across various devices (desktop, tablet, mobile).
 •	Dark Mode Toggle: 🌗 A user-friendly feature for adjusting the website's theme.
+
 ---
 
 ---
@@ -46,6 +48,8 @@ Navigating and interacting with the portfolio is straightforward:
 •	Certifications: Click on any certification card to view its public verification link (e.g., on Credly or Microsoft Learn).
 •	Resume Download: In the "Resume" section, click the "Download Resume" button to get a copy of my resume.
 •	Contact Form: Fill out the contact form in the "Contact" section to send a message directly.
+
+
 ---
 
 ---
@@ -53,6 +57,7 @@ Navigating and interacting with the portfolio is straightforward:
 I'm always open to discussing new opportunities, collaborations, or just connecting with fellow developers and enthusiasts. Feel free to reach out to me through any of the following channels:
 •	Gmail: 📧 duvvavinaykumar@gmail.com
 •	LinkedIn: 🔗 Your LinkedIn Profile
-•	GitHub: 깃 Your GitHub Profile
+•	GitHub: Your GitHub Profile
 Looking forward to connecting!
 
+---
