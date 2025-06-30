@@ -16,6 +16,7 @@ Currently working at Cognizant, I have a proven track record of operational exce
 ## Features
 
 My portfolio website provides an in-depth look into my professional profile, featuring:
+
 •	About Me Section: 👤 A detailed introduction to my background, passion, and career aspirations.
 •	Key Skills & Technologies: 💻 A categorized overview of my technical proficiencies in web development, cloud platforms, DevOps, programming, and networking.
 •	Experience Timeline: 💼 A summary of my professional roles and key accomplishments.
