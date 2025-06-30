@@ -74,6 +74,8 @@ I'm always open to discussing new opportunities, collaborations, or just connect
 
 •	Gmail: 📧 duvvavinaykumar@gmail.com
 
+•	Website Link: 🔗 https://vinay-kumar-duvva-portfolio.s3.ap-south-1.amazonaws.com/index.html
+
 •	LinkedIn: 🔗 https://www.linkedin.com/in/vinay-kumar-duvva/
 
 •	GitHub: https://github.com/vinay1515/
